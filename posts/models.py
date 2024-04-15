@@ -8,4 +8,5 @@ class Post(models.Model):
     category = models.CharField(max_length=100)
     img = models.ImageField(upload_to='pics')
     created_at = models.DateTimeField(default=datetime.now, blank=True)
+    author = models.CharField(max_length=100,default="Valarie Rono ")
      
